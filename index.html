@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b16">
+  <meta name="description" content="NOVA: tecnología, creatividad e innovación para el futuro.">
+  <title>NOVA — Beyond the Future</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- INTRO CINEMATOGRÁFICA -->
+  <div id="intro">
+    <div class="intro-eye">
+      <div class="eye-line"></div>
+      <div class="eye-light"></div>
+    </div>
+    <div class="eyelid eyelid-top"></div>
+    <div class="eyelid eyelid-bottom"></div>
+
+    <div class="intro-content">
+      <div class="intro-logo">N<span>.</span></div>
+      <p>NOVA EXPERIENCE</p>
+      <small>INITIALIZING THE FUTURE</small>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#inicio" class="logo">NOVA<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#vision">Nuestra visión</a>
+        <a href="#universo">Universo NOVA</a>
+        <a href="#novedades">Novedades</a>
+        <a href="#contacto" class="nav-button">Conectar ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO: FORMULARIO ARRIBA -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="eyebrow reveal">
+            <span class="live-dot"></span>
+            THE NEXT DIGITAL EXPERIENCE
+          </div>
+
+          <h1 class="hero-title">
+            El futuro<br>
+            comienza <span class="gradient-text" id="changingWord">ahora.</span>
+          </h1>
+
+          <p class="hero-description reveal">
+            La innovación no se detiene. Explora un universo donde
+            la tecnología, las ideas y la creatividad se encuentran
+            para crear nuevas posibilidades.
+          </p>
+
+          <!-- CAMPO DE GMAIL ARRIBA -->
+          <div class="hero-subscribe reveal" id="contacto">
+            <div class="subscribe-heading">
+              <span class="live-dot"></span>
+              <span>ÚNETE A LA EXPERIENCIA NOVA</span>
+            </div>
+
+            <form id="subscribe-form" class="subscribe-form">
+              <label class="sr-only" for="email">Correo electrónico</label>
+
+              <div class="email-field">
+                <span class="email-icon">✉</span>
+                <input
+                  type="email"
+                  id="email"
+                  name="to_email"
+                  placeholder="Tu correo electrónico..."
+                  autocomplete="email"
+                  required>
+              </div>
+
+              <input
+                type="text"
+                name="website"
+                class="honeypot"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true">
+
+              <button type="submit" id="submit-button">
+                CONECTARME <span>↗</span>
+              </button>
+            </form>
+
+            <p class="form-message" id="message" aria-live="polite"></p>
+            <small class="privacy-note">Recibe novedades e ideas directamente en tu bandeja de entrada.</small>
+          </div>
+
+          <div class="hero-actions reveal">
+            <a href="#vision" class="text-link">EXPLORAR NOVA <span>↓</span></a>
+            <span class="hero-caption">INNOVATION · TECHNOLOGY · FUTURE</span>
+          </div>
+        </div>
+
+        <!-- IMAGEN HERO -->
+        <div class="hero-visual reveal">
+          <div class="visual-frame">
+            <img
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=90"
+              alt="La Tierra vista desde el espacio">
+
+            <div class="visual-scan"></div>
+
+            <div class="visual-top-label">
+              <span>FIG. 001</span>
+              <span>LIVE EXPERIENCE</span>
+            </div>
+
+            <div class="visual-bottom">
+              <div>
+                <small>EXPLORE THE UNKNOWN</small>
+                <h3>Beyond limits.</h3>
+              </div>
+              <span class="visual-arrow">↗</span>
+            </div>
+          </div>
+
+          <div class="floating-card float-card-one">
+            <span class="card-icon">✳</span>
+            <div>
+              <small>STATUS</small>
+              <strong>FUTURE ACTIVE</strong>
+            </div>
+          </div>
+
+          <div class="floating-card float-card-two">
+            <span class="pulse-ring"></span>
+            <div>
+              <small>CONNECTION</small>
+              <strong>ESTABLISHED</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom-line">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"><span></span></div>
+        <span>BOGOTÁ · COLOMBIA</span>
+      </div>
+    </section>
+
+    <!-- CINTA ANIMADA -->
+    <section class="marquee">
+      <div class="marquee-track">
+        <span>THINK DIFFERENT</span><b>✳</b>
+        <span>CREATE THE FUTURE</span><b>✳</b>
+        <span>GO BEYOND</span><b>✳</b>
+        <span>THINK DIFFERENT</span><b>✳</b>
+        <span>CREATE THE FUTURE</span><b>✳</b>
+        <span>GO BEYOND</span><b>✳</b>
+      </div>
+    </section>
+
+    <!-- VISIÓN -->
+    <section class="vision section-space" id="vision">
+      <div class="container vision-grid">
+        <div class="vision-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85"
+            alt="Detalle de circuitos electrónicos">
+
+          <div class="image-counter">NOVA / 001</div>
+          <div class="image-caption">TECHNOLOGY IN MOTION</div>
+        </div>
+
+        <div class="vision-copy reveal">
+          <span class="section-tag">01 — NUESTRA VISIÓN</span>
+          <h2 class="section-title">
+            No seguimos<br>
+            tendencias.<br>
+            <span>Imaginamos lo que sigue.</span>
+          </h2>
+
+          <p>
+            NOVA representa una nueva forma de entender la innovación.
+            Un espacio donde la tecnología se une con la creatividad
+            para explorar ideas y transformar perspectivas.
+          </p>
+
+          <p>
+            Creemos que el futuro se construye con curiosidad,
+            experimentación y ganas de ir más allá.
+          </p>
+
+          <a href="#universo" class="outline-link">DESCUBRE NUESTRO UNIVERSO ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTADORES -->
+    <section class="numbers">
+      <div class="container number-grid">
+        <div class="number-item reveal">
+          <strong class="counter" data-target="100">0</strong><span>%</span>
+          <p>MENTALIDAD INNOVADORA</p>
+        </div>
+        <div class="number-item reveal">
+          <strong class="counter" data-target="24">0</strong><span>/7</span>
+          <p>IDEAS EN MOVIMIENTO</p>
+        </div>
+        <div class="number-item reveal">
+          <strong class="counter" data-target="360">0</strong><span>°</span>
+          <p>NUEVAS PERSPECTIVAS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSO -->
+    <section class="universe section-space" id="universo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-tag">02 — EL UNIVERSO NOVA</span>
+            <h2 class="section-title">Tres formas de<br><span>mirar más lejos.</span></h2>
+          </div>
+          <p>
+            Ideas que conectan el presente con las posibilidades
+            que todavía estamos por descubrir.
+          </p>
+        </div>
+
+        <div class="universe-grid">
+
+          <article class="universe-card reveal">
+            <div class="universe-image">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+                alt="Tecnología y circuitos">
+              <span class="universe-index">01</span>
+            </div>
+            <div class="universe-info">
+              <span>TECHNOLOGY</span>
+              <h3>El poder de crear.</h3>
+              <p>La tecnología como herramienta para convertir ideas en experiencias.</p>
+              <a href="#novedades">EXPLORAR ↗</a>
+            </div>
+          </article>
+
+          <article class="universe-card reveal">
+            <div class="universe-image">
+              <img
+                src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1000&q=85"
+                alt="Galaxia y universo">
+              <span class="universe-index">02</span>
+            </div>
+            <div class="universe-info">
+              <span>EXPLORATION</span>
+              <h3>Más allá de lo conocido.</h3>
+              <p>La curiosidad nos impulsa a descubrir nuevas perspectivas.</p>
+              <a href="#novedades">EXPLORAR ↗</a>
+            </div>
+          </article>
+
+          <article class="universe-card reveal">
+            <div class="universe-image">
+              <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+                alt="Espacio creativo de trabajo">
+              <span class="universe-index">03</span>
+            </div>
+            <div class="universe-info">
+              <span>CREATIVITY</span>
+              <h3>Ideas sin fronteras.</h3>
+              <p>Diseñar, experimentar y transformar la manera de pensar.</p>
+              <a href="#novedades">EXPLORAR ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FRASE INMERSIVA -->
+    <section class="immersive">
+      <div class="immersive-bg"></div>
+      <div class="immersive-content reveal">
+        <span class="section-tag">THE FUTURE IS AN OPEN SPACE</span>
+        <h2>El límite está<br>en lo que <span>imaginamos.</span></h2>
+        <div class="immersive-line"></div>
+        <p>NOVA — Innovando hoy. Construyendo el mañana.</p>
+      </div>
+    </section>
+
+    <!-- NOVEDADES -->
+    <section class="news section-space" id="novedades">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-tag">03 — EXPLORA NUEVAS IDEAS</span>
+            <h2 class="section-title">El futuro se<br><span>está escribiendo.</span></h2>
+          </div>
+          <p>
+            Un espacio para descubrir tendencias, tecnología,
+            creatividad y nuevas formas de pensar.
+          </p>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85"
+              alt="Inteligencia artificial y tecnología"
+              loading="lazy">
+            <div class="news-info">
+              <span>01 / TECNOLOGÍA</span>
+              <h3>La creatividad en una nueva era digital.</h3>
+              <p>Las herramientas digitales están abriendo nuevos caminos.</p>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=85"
+              alt="Equipo colaborando en innovación"
+              loading="lazy">
+            <div class="news-info">
+              <span>02 / INNOVACIÓN</span>
+              <h3>Las ideas crecen cuando se conectan.</h3>
+              <p>La colaboración permite construir soluciones diferentes.</p>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85"
+              alt="Cielo nocturno lleno de estrellas"
+              loading="lazy">
+            <div class="news-info">
+              <span>03 / EXPLORACIÓN</span>
+              <h3>Siempre hay algo más por descubrir.</h3>
+              <p>La curiosidad es el comienzo de cada gran avance.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta">
+      <div class="container final-cta-inner reveal">
+        <span class="section-tag">YOUR NEXT CHAPTER STARTS HERE</span>
+        <h2>¿Estás listo para<br><span>ir más allá?</span></h2>
+        <a href="#contacto" class="button-primary">CONECTAR CON NOVA ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <a href="#inicio" class="logo">NOVA<span>.</span></a>
+      <p>Innovando hoy. Construyendo el mañana.</p>
+      <a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a>
+    </div>
+
+    <div class="container footer-bottom">
+      <span id="copyright">© 2026 NOVA. Todos los derechos reservados.</span>
+      <span>TECHNOLOGY · DESIGN · FUTURE</span>
+    </div>
+  </footer>
+
+  <!-- MÚSICA -->
+  <button id="musicButton" class="music-button" type="button">
+    <span id="musicIcon">♫</span>
+    <span id="musicText">ACTIVAR SONIDO</span>
+  </button>
+
+  <audio id="novaMusic" loop preload="none">
+    <source src="audio/nova-intro.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
